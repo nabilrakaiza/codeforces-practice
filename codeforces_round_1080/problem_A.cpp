@@ -1,13 +1,11 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
+#include <cmath>
+#include <string>
 using namespace std;
 
-// 0 index will always be first child
-// last index will always be second child
-
-void solve() {
+void solve() {    
     int n;
     cin >> n;
 
@@ -17,9 +15,15 @@ void solve() {
         cin >> arr[i];
     }
 
-    
-}
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == 67) {
+            cout << "YES" << "\n";
+            return ;
+        }
+    }
 
+    cout << "NO" << "\n";
+}
 
 int main() {
     int t;
